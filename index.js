@@ -118,18 +118,20 @@ app.intent('Volume', {
                         speechOutput += ' and ';
                     }
                     if (Units == undefined || Units === "litres" || Units === "liters") {
-                        replyWith(appName + ' has ' + (keg.volume_ml_remain / 1000).toPrecision(2) + ' litres of ' + keg.type.name + ' on tap number ' + TapNumber, response);
+                        speechOutput += ' has ' + (keg.volume_ml_remain / 1000).toPrecision(2) + ' litres of ' + keg.type.name;
                     } else if (Units === 'pints') {
-                        replyWith(appName + ' has ' + (keg.volume_ml_remain / 473.176).toPrecision(2) + ' pints of ' + keg.type.name + ' on tap number ' + TapNumber, response);
+                        speechOutput += ' has ' + (keg.volume_ml_remain / 473.176).toPrecision(2) + ' pints of ' + keg.type.name;
                     } else if (Units === 'percent' || Units === 'percentage') {
                         if (keg.percent_full == 100) {
                             speechOutput += ' has a full keg of ' + keg.type.name;
                         } else {
-                            replyWith(appName + ' has ' + keg.percent_full.toPrecision(2) + ' percent of ' + keg.type.name + ' on tap number ' + TapNumber, response);
+                            speechOutput += ' has ' + keg.percent_full.toPrecision(2) + ' percent of ' + keg.type.name;
                         }
                     }
                     if (kegs.length > 1 ) {
                         speechOutput += ' on tap number ' + (index + 1) + '. ';
+                    } else {
+                        speechOutput += ' on tap.';
                     }
                 });
                 replyWith(speechOutput, response);
