@@ -10,6 +10,13 @@ onTap   what is on number {TapNumber}
 onTap   what beer is on number {TapNumber}
 onTap   what is on tap number {TapNumber}
 onTap   what beer is on tap number {TapNumber}
+RecentSession	tell me about the last session
+RecentSession	whats been happening
+RecentSession	whats happening
+RecentSession	whats been pouring
+RecentSession	when was the last session
+RecentSession	who has been drinking
+RecentSession	who has been drinking recently
 Volume  how much beer is left in {VolumeUnits}
 Volume  how much is left in {VolumeUnits}
 Volume  how much beer is there in {VolumeUnits}

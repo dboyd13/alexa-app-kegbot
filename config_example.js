@@ -12,6 +12,10 @@ config.applicationId = 'amzn1.ask.skill.XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX';
 // Greeting, when saying 'Alexa, open...'
 config.greeting = "Kegbot, at your service";
 
+// Preferred Units - Choose One
+config.units = "imperial";
+//config.units = "metric";
+
 /***************************** Kegbot CONFIGURATION ********************************************/
 // Name of the application/skill, which does not need to match the skills 'Invocation Name',
 // This is what the application calls itself in the voice prompts. The space helps the speech.
@@ -59,6 +63,15 @@ config.utterances = {
         "what is the {keg|beer} {VolumeUnits}",
         "what {VolumeUnits} is left in {keg|tap} { |number} {TapNumber}",
         "what is the {keg|beer} {VolumeUnits} in {keg|tap} { |number} {TapNumber}",
+    ],
+    'recentSession': [
+        "tell me about the last session",
+        "whats been happening",
+        "whats happening",
+        "whats been pouring",
+        "when was the last session",
+        "who has been drinking",
+        "who has been drinking recently"
     ],
     'Help': [
         "{to |} help {me |}",

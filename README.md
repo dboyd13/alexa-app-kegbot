@@ -31,6 +31,7 @@ For a more corporate friendly setup, maybe the Lambda version is better: [alexa-
   1. `cd ~/node_modules/alexa-app-server/api/apps/`
 1. Clone Repo: `git clone https://github.com/patfreeman/alexa-app-kegbot.git`
   1. `cd alexa-app-kegbot`
+  1. `npm install javascript-time-ago`
   1. `cp config_example.js config.js`
   1. `vi config.js`
     1. Set your Kegbot configuration. Protocol, host, port, API key (if required)
